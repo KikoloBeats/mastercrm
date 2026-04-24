@@ -278,7 +278,7 @@ export default function LeadList({ leads, onSelectLead }) {
                       <td><ScoreChip score={lead.score} /></td>
                       <td><LastContact date={lead.last_contacted_at} /></td>
                       <td className="text-xs" style={{ color: 'var(--muted)', fontFamily: 'Inter, sans-serif' }}>
-                        {lead.created_at ? new Date(lead.created_at).toLocaleDateString('pt-PT', { day: '2-digit', month: 'short' }) : ''}
+                        {lead.created_at ? new Date(lead.created_at).toLocaleDateString('pt-PT', { day: '2-digit', month: 'short', year: 'numeric' }) : ''}
                       </td>
                       <td onClick={e => e.stopPropagation()}>
                         <WaLink number={lead.whatsapp} />

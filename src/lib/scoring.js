@@ -34,29 +34,26 @@ export function calculateQualityScore(tallyResponse) {
   return Math.min(score, 60)
 }
 
-export function scoreBreakdown(tallyResponse, createdAt, minDate, maxDate) {
-  const recency = calculateRecencyScore(createdAt, minDate, maxDate)
+export function calculateRecencyScore(createdAt) {
+  const days = (Date.now() - new Date(createdAt).getTime()) / 86400000
+  if (days < 7)   return 40
+  if (days < 30)  return 32
+  if (days < 60)  return 22
+  if (days < 90)  return 14
+  if (days < 180) return 6
+  return 0
+}
+
+export function scoreBreakdown(tallyResponse, createdAt) {
+  const recency = calculateRecencyScore(createdAt)
   const quality = calculateQualityScore(tallyResponse)
   return { recency, quality, total: recency + quality }
 }
 
-export function calculateRecencyScore(createdAt, minDate, maxDate) {
-  const date = new Date(createdAt).getTime()
-  if (minDate === maxDate) return 40
-  return Math.round(((date - minDate) / (maxDate - minDate)) * 40)
-}
-
 export function calculateScores(leads) {
-  if (!leads.length) return []
-  const dates = leads.map(l => new Date(l.created_at).getTime())
-  const minDate = Math.min(...dates)
-  const maxDate = Math.max(...dates)
-
   return leads.map(lead => ({
     ...lead,
-    score:
-      calculateRecencyScore(lead.created_at, minDate, maxDate) +
-      calculateQualityScore(lead.tally_response),
+    score: calculateRecencyScore(lead.created_at) + calculateQualityScore(lead.tally_response),
   }))
 }
 
