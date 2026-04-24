@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c ' *)",
+      "Bash(node -e ' *)",
+      "Bash(powershell -Command ' *)",
+      "Bash(npm install *)",
+      "PowerShell(Get-ChildItem \"C:\\\\Program Files\\\\nodejs\" -ErrorAction SilentlyContinue; Get-ChildItem \"$env:APPDATA\\\\npm\" -ErrorAction SilentlyContinue | Select-Object -First 5; Get-ChildItem \"C:\\\\Users\\\\vcosta\\\\AppData\\\\Roaming\\\\nvm\" -ErrorAction SilentlyContinue | Select-Object -First 5)",
+      "mcp__Claude_Preview__preview_start",
+      "PowerShell(Get-Command node, npm -ErrorAction SilentlyContinue)",
+      "PowerShell($env:Path)",
+      "Bash(\"C:\\\\Program Files\\\\7-Zip\\\\7z.exe\" l saveweb2zip-com-www-creatio-com.zip)",
+      "Bash(powershell -Command \"Expand-Archive -Path 'saveweb2zip-com-www-creatio-com.zip' -DestinationPath 'creatio-site' -Force 2>&1; ls creatio-site | head -20\")",
+      "Bash(powershell -Command \"Expand-Archive -Path 'C:\\\\Users\\\\vcosta\\\\Downloads\\\\saveweb2zip-com-www-creatio-com.zip' -DestinationPath 'C:\\\\Users\\\\vcosta\\\\Downloads\\\\creatio-site' -Force; Get-ChildItem 'C:\\\\Users\\\\vcosta\\\\Downloads\\\\creatio-site' -Recurse -Depth 1 | Select-Object -First 30 | Format-Table Name, Length\")"
+    ]
+  }
+}
