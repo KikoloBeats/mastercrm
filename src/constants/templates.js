@@ -7,13 +7,13 @@ export const TEMPLATES = {
       id: 'novo_v1',
       label: 'Variação A - Confirmação suave',
       text: (name) =>
-        `Olá ${fn(name)} \u{1F60A}\nSou a Júlia, da equipa da Carla Morais.\n\nVi que preencheste o formulário do MasterPlan de Carreira. As inscrições abrem amanhã, dia 28.\n\nVou partilhar o link contigo amanhã de manhã \u{1F64F}\u{1F3FB}`,
+        `Olá ${fn(name)} \u{1F60A}\nSou a Júlia, da equipa da Carla Morais.\n\nVi que preencheste o formulário do MasterPlan de Carreira. As inscrições abrem amanhã, dia 28.\n\nVou partilhar o link contigo amanhã \u{1F64F}\u{1F3FB}`,
     },
     {
       id: 'novo_v2',
       label: 'Variação B - Com curiosidade',
       text: (name) =>
-        `Olá ${fn(name)} \u{1F60A}\nSou a Júlia, da equipa da Carla Morais.\n\nRecebi a tua inscrição no MasterPlan de Carreira. As inscrições abrem amanhã, dia 28.\n\nEnvio-te o link amanhã de manhã \u{1F64F}\u{1F3FB}`,
+        `Olá ${fn(name)} \u{1F60A}\nSou a Júlia, da equipa da Carla Morais.\n\nRecebi a tua inscrição no MasterPlan de Carreira. As inscrições abrem amanhã, dia 28.\n\nEnvio-te o link amanhã \u{1F64F}\u{1F3FB}`,
     },
     {
       id: 'novo_v3',
