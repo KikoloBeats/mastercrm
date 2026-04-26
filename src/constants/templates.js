@@ -5,21 +5,25 @@ export const TEMPLATES = {
   novo: [
     {
       id: 'novo_v1',
-      label: 'Variacao A - Directa',
+      label: 'Variação A - Confirmação suave',
       text: (name) =>
-        `Ola ${fn(name)}! Sou a Julia, da equipa da Carla Morais.\n\nVi que te inscreveste para saber mais sobre o MasterPlan de Carreira. Ainda andas a pensar em dar uma nova direcao a tua carreira?\n\nEstou aqui para te ajudar!`,
+        `Olá ${fn(name)} 😊\nSou a Julia, da equipa da Carla Morais.\n\nVi que preencheste o formulário do MasterPlan de Carreira. Vamos abrir novas vagas na terça-feira, dia 28. Esperamos que consigas participar nesta turma 🙏🏻\n\nFica atenta, vou partilhar todos os detalhes em breve.`,
     },
     {
       id: 'novo_v2',
-      label: 'Variacao B - Com lancamento',
+      label: 'Variação B - Com curiosidade',
       text: (name) =>
-        `Ola ${fn(name)}! Sou a Julia, da equipa da Carla Morais.\n\nEntro em contacto porque ficaste na nossa lista de interessadas no MasterPlan de Carreira. O curso lanca amanha e as vagas sao limitadas!\n\nTens alguma questao em que te possa ajudar?`,
+        `Olá ${fn(name)} 😊\nSou a Julia, da equipa da Carla Morais.\n\nQueria confirmar que recebemos a tua inscrição no MasterPlan de Carreira. Abrimos vagas na terça-feira, dia 28, e as vagas são mesmo limitadas 🙏🏻\n\nVou partilhar todos os detalhes em breve. Fica atenta!`,
     },
     {
       id: 'novo_v3',
-      label: 'Variacao C - Com urgencia',
-      text: (name) =>
-        `Ola ${fn(name)}! Sou a Julia, da equipa da Carla Morais.\n\nInscreveste-te para saber mais sobre o MasterPlan de Carreira e o lancamento e amanha. As vagas sao limitadas.\n\nAinda queres saber mais? Responde sim e envio-te tudo!`,
+      label: 'Variação C - Personalizada',
+      text: (name, tallyResponse) => {
+        const meio = tallyResponse && tallyResponse.trim().length > 10
+          ? `Já li o que partilhaste e faz todo o sentido.`
+          : `Nos próximos dias partilho contigo todos os detalhes.`
+        return `Olá ${fn(name)} 😊\nSou a Julia, da equipa da Carla Morais.\n\n${meio}\n\nQualquer dúvida, estou por aqui 🙏🏻`
+      },
     },
   ],
   contactado: [
