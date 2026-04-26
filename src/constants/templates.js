@@ -7,13 +7,13 @@ export const TEMPLATES = {
       id: 'novo_v1',
       label: 'Variação A - Confirmação suave',
       text: (name) =>
-        `Olá ${fn(name)} 😊\nSou a Júlia, da equipa da Carla Morais.\n\nVi que preencheste o formulário do MasterPlan de Carreira. Vamos abrir novas vagas na terça-feira, dia 28. Esperamos que consigas participar nesta turma 🙏🏻\n\nFica atenta, vou partilhar todos os detalhes em breve.`,
+        `Olá ${fn(name)} \u{1F60A}\nSou a Júlia, da equipa da Carla Morais.\n\nVi que preencheste o formulário do MasterPlan de Carreira. Vamos abrir novas vagas na terça-feira, dia 28. Esperamos que consigas participar nesta turma \u{1F64F}\u{1F3FB}\n\nFica atenta, vou partilhar todos os detalhes em breve.`,
     },
     {
       id: 'novo_v2',
       label: 'Variação B - Com curiosidade',
       text: (name) =>
-        `Olá ${fn(name)} 😊\nSou a Júlia, da equipa da Carla Morais.\n\nQueria confirmar que recebemos a tua inscrição no MasterPlan de Carreira. Abrimos vagas na terça-feira, dia 28, e as vagas são mesmo limitadas 🙏🏻\n\nVou partilhar todos os detalhes em breve. Fica atenta!`,
+        `Olá ${fn(name)} \u{1F60A}\nSou a Júlia, da equipa da Carla Morais.\n\nQueria confirmar que recebemos a tua inscrição no MasterPlan de Carreira. Abrimos vagas na terça-feira, dia 28, e as vagas são mesmo limitadas \u{1F64F}\u{1F3FB}\n\nVou partilhar todos os detalhes em breve. Fica atenta!`,
     },
     {
       id: 'novo_v3',
@@ -22,7 +22,7 @@ export const TEMPLATES = {
         const meio = tallyResponse && tallyResponse.trim().length > 10
           ? `Já li o que partilhaste e faz todo o sentido.`
           : `Nos próximos dias partilho contigo todos os detalhes.`
-        return `Olá ${fn(name)} 😊\nSou a Júlia, da equipa da Carla Morais.\n\n${meio}\n\nQualquer dúvida, estou por aqui 🙏🏻`
+        return `Olá ${fn(name)} \u{1F60A}\nSou a Júlia, da equipa da Carla Morais.\n\n${meio}\n\nQualquer dúvida, estou por aqui \u{1F64F}\u{1F3FB}`
       },
     },
   ],
