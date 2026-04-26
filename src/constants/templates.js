@@ -7,19 +7,19 @@ export const TEMPLATES = {
       id: 'novo_v1',
       label: 'Variacao A - Directa',
       text: (name) =>
-        `Ola ${fn(name)}! Como estas?\n\nVi que te inscreveste para saber mais sobre o Curso MasterPlan de Carreira da Carla Morais. Ainda andas a pensar em dar uma nova direcao a tua carreira?\n\nEstou aqui para te ajudar!`,
+        `Ola ${fn(name)}! Sou a Julia, da equipa da Carla Morais.\n\nVi que te inscreveste para saber mais sobre o MasterPlan de Carreira. Ainda andas a pensar em dar uma nova direcao a tua carreira?\n\nEstou aqui para te ajudar!`,
     },
     {
       id: 'novo_v2',
       label: 'Variacao B - Com lancamento',
       text: (name) =>
-        `Ola ${fn(name)}! Espero que estejas bem.\n\nEntro em contacto porque ficaste na nossa lista de interessadas no MasterPlan de Carreira da Carla Morais. O curso lanca a 28 de abril e as vagas sao limitadas!\n\nTens alguma questao em que te possa ajudar?`,
+        `Ola ${fn(name)}! Sou a Julia, da equipa da Carla Morais.\n\nEntro em contacto porque ficaste na nossa lista de interessadas no MasterPlan de Carreira. O curso lanca amanha e as vagas sao limitadas!\n\nTens alguma questao em que te possa ajudar?`,
     },
     {
       id: 'novo_v3',
       label: 'Variacao C - Com urgencia',
       text: (name) =>
-        `Ola ${fn(name)}! Boa tarde.\n\nA Carla Morais lanca o Curso MasterPlan de Carreira a 28 de abril e tu fizeste parte da lista de interessadas. Ainda queres saber mais?\n\nResponde sim e envio-te todos os detalhes!`,
+        `Ola ${fn(name)}! Sou a Julia, da equipa da Carla Morais.\n\nInscreveste-te para saber mais sobre o MasterPlan de Carreira e o lancamento e amanha. As vagas sao limitadas.\n\nAinda queres saber mais? Responde sim e envio-te tudo!`,
     },
   ],
   contactado: [
