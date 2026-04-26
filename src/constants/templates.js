@@ -7,19 +7,19 @@ export const TEMPLATES = {
       id: 'novo_v1',
       label: 'Variação A - Confirmação suave',
       text: (name) =>
-        `Olá ${fn(name)} \u{1F60A}\nSou a Júlia, da equipa da Carla Morais.\n\nVi que preencheste o formulário do MasterPlan de Carreira. Vamos abrir novas vagas na terça-feira, dia 28. Esperamos que consigas participar nesta turma \u{1F64F}\u{1F3FB}\n\nFica atenta, vou partilhar todos os detalhes em breve.`,
+        `Olá ${fn(name)} \u{1F60A}\nSou a Júlia, da equipa da Carla Morais.\n\nVi que preencheste o formulário do MasterPlan de Carreira. As inscrições abrem amanhã, dia 28.\n\nVou partilhar o link contigo amanhã de manhã \u{1F64F}\u{1F3FB}`,
     },
     {
       id: 'novo_v2',
       label: 'Variação B - Com curiosidade',
       text: (name) =>
-        `Olá ${fn(name)} \u{1F60A}\nSou a Júlia, da equipa da Carla Morais.\n\nQueria confirmar que recebemos a tua inscrição no MasterPlan de Carreira.\n\nVou partilhar todos os detalhes em breve \u{1F64F}\u{1F3FB}`,
+        `Olá ${fn(name)} \u{1F60A}\nSou a Júlia, da equipa da Carla Morais.\n\nRecebi a tua inscrição no MasterPlan de Carreira. As inscrições abrem amanhã, dia 28.\n\nEnvio-te o link amanhã de manhã \u{1F64F}\u{1F3FB}`,
     },
     {
       id: 'novo_v3',
       label: 'Variação C - Geral',
       text: (name) =>
-        `Olá ${fn(name)} \u{1F60A}\nSou a Júlia, da equipa da Carla Morais.\n\nVi que te inscreveste para saber mais sobre o MasterPlan de Carreira. Nos próximos dias partilho contigo tudo o que precisas de saber.\n\nQualquer dúvida, estou por aqui \u{1F64F}\u{1F3FB}`,
+        `Olá ${fn(name)} \u{1F60A}\nSou a Júlia, da equipa da Carla Morais.\n\nVi que te inscreveste no MasterPlan de Carreira. As inscrições abrem amanhã, dia 28.\n\nQualquer dúvida, estou por aqui \u{1F64F}\u{1F3FB}`,
     },
   ],
   contactado: [
