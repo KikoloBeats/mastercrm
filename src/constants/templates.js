@@ -21,6 +21,12 @@ export const TEMPLATES = {
       text: (name) =>
         `Olá ${fn(name)} \u{1F60A}\nSou a Júlia, da equipa da Carla Morais.\n\nAs inscrições para o MasterPlan de Carreira abriram hoje.\n\nAinda tens interesse?`,
     },
+    {
+      id: 'novo_v4',
+      label: 'Lançamento — Inscrito hoje',
+      text: (name) =>
+        `Olá ${fn(name)} \u{1F60A}\nSou a Júlia, da equipa da Carla Morais.\n\nAcabaste de te inscrever para saber mais sobre o MasterPlan de Carreira e as inscrições estão abertas agora mesmo.\n\nQueres que te envie o link directo?`,
+    },
   ],
   contactado: [
     {
