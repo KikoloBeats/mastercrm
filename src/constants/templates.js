@@ -5,21 +5,21 @@ export const TEMPLATES = {
   novo: [
     {
       id: 'novo_v1',
-      label: 'Variação A - Confirmação suave',
+      label: 'Lançamento — Warm',
       text: (name) =>
-        `Olá ${fn(name)} \u{1F60A}\nSou a Júlia, da equipa da Carla Morais.\n\nVi que preencheste o formulário do MasterPlan de Carreira. As inscrições abrem amanhã, dia 28.\n\nVou partilhar o link contigo amanhã`,
+        `Olá ${fn(name)} \u{1F60A}\nSou a Júlia, da equipa da Carla Morais.\n\nAs inscrições para o MasterPlan de Carreira abriram hoje. Ficaste na nossa lista de interessadas e não queria que ficasses de fora.\n\nQueres que te envie o link?`,
     },
     {
       id: 'novo_v2',
-      label: 'Variação B - Com curiosidade',
+      label: 'Lançamento — Cold',
       text: (name) =>
-        `Olá ${fn(name)} \u{1F60A}\nSou a Júlia, da equipa da Carla Morais.\n\nRecebi a tua inscrição no MasterPlan de Carreira. As inscrições abrem amanhã, dia 28.\n\nEnvio-te o link amanhã`,
+        `Olá ${fn(name)} \u{1F60A}\nSou a Júlia, da equipa da Carla Morais.\n\nAs inscrições para o MasterPlan de Carreira abriram hoje. Ficaste na nossa lista e queria avisar-te.\n\nAinda tens interesse?`,
     },
     {
       id: 'novo_v3',
-      label: 'Variação C - Geral',
+      label: 'Lançamento — Geral',
       text: (name) =>
-        `Olá ${fn(name)} \u{1F60A}\nSou a Júlia, da equipa da Carla Morais.\n\nVi que te inscreveste no MasterPlan de Carreira. As inscrições abrem amanhã, dia 28.\n\nQualquer dúvida, estou por aqui`,
+        `Olá ${fn(name)} \u{1F60A}\nSou a Júlia, da equipa da Carla Morais.\n\nAs inscrições para o MasterPlan de Carreira abriram hoje.\n\nAinda tens interesse?`,
     },
   ],
   contactado: [
