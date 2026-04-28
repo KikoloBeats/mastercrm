@@ -5,21 +5,21 @@ export const TEMPLATES = {
   novo: [
     {
       id: 'novo_v1',
+      label: 'Lançamento — Com link',
+      text: (name) =>
+        `Olá ${fn(name)} \u{1F60A}\nSou a Júlia, da equipa da Carla Morais.\n\nAs inscrições para o MasterPlan de Carreira abriram hoje. Tens aqui o link para fazeres parte desta turma \u{1F90D}\n\nhttps://masterplan.carlamorais.com`,
+    },
+    {
+      id: 'novo_v2',
       label: 'Lançamento — Warm',
       text: (name) =>
         `Olá ${fn(name)} \u{1F60A}\nSou a Júlia, da equipa da Carla Morais.\n\nAs inscrições para o MasterPlan de Carreira abriram hoje. Ficaste na nossa lista de interessadas e não queria que ficasses de fora.\n\nQueres que te envie o link?`,
     },
     {
-      id: 'novo_v2',
+      id: 'novo_v3',
       label: 'Lançamento — Cold',
       text: (name) =>
         `Olá ${fn(name)} \u{1F60A}\nSou a Júlia, da equipa da Carla Morais.\n\nAs inscrições para o MasterPlan de Carreira abriram hoje. Ficaste na nossa lista e queria avisar-te.\n\nAinda tens interesse?`,
-    },
-    {
-      id: 'novo_v3',
-      label: 'Lançamento — Geral',
-      text: (name) =>
-        `Olá ${fn(name)} \u{1F60A}\nSou a Júlia, da equipa da Carla Morais.\n\nAs inscrições para o MasterPlan de Carreira abriram hoje.\n\nAinda tens interesse?`,
     },
     {
       id: 'novo_v4',
@@ -52,9 +52,9 @@ export const TEMPLATES = {
   interessado: [
     {
       id: 'interessado_convert_a',
-      label: 'Conversão — Link directo',
+      label: 'Conversão — Com link',
       text: (name) =>
-        `${fn(name)}, as inscrições abriram hoje e as vagas são limitadas.\n\nQueres que te envie o link agora?`,
+        `Olá ${fn(name)} \u{1F60A}\nSou a Júlia, da equipa da Carla Morais.\n\nAs inscrições para o MasterPlan de Carreira abriram hoje. Tens aqui o link para fazeres parte desta turma \u{1F90D}\n\nhttps://masterplan.carlamorais.com`,
     },
     {
       id: 'interessado_convert_b',
