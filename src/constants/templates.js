@@ -31,21 +31,20 @@ export const TEMPLATES = {
   contactado: [
     {
       id: 'contactado_followup',
-      label: 'Follow-up apos 2 dias',
+      label: 'Follow-up — Hoje é o último dia',
       text: (name) =>
-        `Ola ${fn(name)}! So a verificar se a minha mensagem anterior chegou bem.\n\nO lancamento do MasterPlan de Carreira da Carla e a 28 de abril e as vagas sao limitadas. Tens alguma questao em que te possa ajudar?\n\nFico a espera!`,
+        `Olá ${fn(name)} \u{1F60A}\n\nAs inscrições para o MasterPlan de Carreira fecham hoje.\n\nAinda estás interessada?`,
     },
   ],
   respondeu: [
     {
       id: 'respondeu_qualify',
-      label: 'Qualificacao',
+      label: 'Qualificação',
       text: (name, tallyResponse) => {
-        const snippet =
-          tallyResponse && tallyResponse.trim().length > 10
-            ? `Li o que partilhaste sobre o teu percurso e faz todo o sentido.`
-            : `Obrigada por teres respondido!`
-        return `Ola ${fn(name)}! ${snippet}\n\nQuero mesmo ajudar-te a encontrar o caminho certo. Podes dizer-me: o que e que sentes que esta mesmo a bloquear-te na tua carreira neste momento?\n\nEstou aqui para te ouvir!`
+        const snippet = tallyResponse && tallyResponse.trim().length > 10
+          ? `Li o que partilhaste e faz sentido.`
+          : `Obrigada por teres respondido.`
+        return `Olá ${fn(name)}! ${snippet}\n\nO que sentes que está mesmo a bloquear-te na carreira neste momento?`
       },
     },
   ],
@@ -68,15 +67,15 @@ export const TEMPLATES = {
       id: 'comprou_welcome',
       label: 'Boas-vindas',
       text: (name) =>
-        `Ola ${fn(name)}! Parabens pela tua decisao!\n\nFizeste uma escolha excelente. A Carla e toda a equipa estao muito felizes por ter-te a bordo. Vais receber em breve as informacoes de acesso ao curso.\n\nAte ja!`,
+        `Olá ${fn(name)} \u{1F60A}\n\nParabéns pela decisão!\n\nVais receber em breve as informações de acesso. Qualquer dúvida, estou aqui.\n\nAté já!`,
     },
   ],
   nao_comprou: [
     {
       id: 'nao_comprou_recovery',
-      label: 'Recuperacao pos-lancamento',
+      label: 'Recuperação pós-lançamento',
       text: (name) =>
-        `Ola ${fn(name)}! Compreendo que neste momento pode nao ser o timing certo.\n\nFica a saber que a porta fica sempre aberta. Se algum dia quiseres retomar a conversa, estou aqui para ajudar.\n\nCuida-te bem!`,
+        `Olá ${fn(name)} \u{1F60A}\n\nEspero que estejas bem. Compreendo que esta altura pode não ter sido a certa.\n\nSe quiseres conversar mais à frente, estou aqui.\n\nCuida-te!`,
     },
   ],
   nao_qualificado: [
@@ -84,7 +83,7 @@ export const TEMPLATES = {
       id: 'nao_qualificado_close',
       label: 'Encerramento',
       text: (name) =>
-        `Ola ${fn(name)}! Obrigada pelo teu tempo e interesse.\n\nFica a saber que quando o timing for certo, estamos aqui. Desejo-te muita forca no teu percurso!\n\nCuida-te!`,
+        `Olá ${fn(name)} \u{1F60A}\n\nObrigada pelo interesse e pelo tempo que dedicaste.\n\nSe o teu percurso mudar e fizer sentido falar de novo, sabes onde me encontrar.\n\nCuida-te!`,
     },
   ],
 }
