@@ -51,10 +51,16 @@ export const TEMPLATES = {
   ],
   interessado: [
     {
-      id: 'interessado_convert',
-      label: 'Conversao',
+      id: 'interessado_convert_a',
+      label: 'Conversão — Link directo',
       text: (name) =>
-        `Ola ${fn(name)}! Fico muito contente com o teu interesse.\n\nO MasterPlan de Carreira da Carla Morais inclui: plano de carreira personalizado, sessoes de estrategia pratica, comunidade de apoio e acompanhamento ao longo de todo o processo. O lancamento e a 28 de abril e as vagas sao limitadas!\n\nQueres que te reserve um lugar?`,
+        `${fn(name)}, as inscrições abriram hoje e as vagas são limitadas.\n\nQueres que te envie o link agora?`,
+    },
+    {
+      id: 'interessado_convert_b',
+      label: 'Conversão — Fechar',
+      text: (name) =>
+        `${fn(name)}, é hoje o dia. Já falámos sobre o que queres mudar na tua carreira — o MasterPlan é o próximo passo.\n\nQueres garantir o teu lugar?`,
     },
   ],
   comprou: [
