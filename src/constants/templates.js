@@ -33,6 +33,12 @@ export const TEMPLATES = {
       text: (name) =>
         `Olá ${fn(name)} \u{1F60A}\nSou a Júlia, da equipa da Carla Morais.\n\nAs inscrições para o MasterPlan de Carreira estão a fechar em breve. Ficaste na nossa lista e não queríamos que ficasses de fora.\n\nAinda tens interesse?`,
     },
+    {
+      id: 'novo_v6',
+      label: 'Lista de espera - Continua o que começaste',
+      text: (name) =>
+        `Olá ${fn(name)} \u{1F60A}\nSou a Júlia, da equipa da Carla Morais.\n\nInscreveste-te na nossa lista porque queres mudar algo na tua carreira. O próximo passo está aqui:\nhttps://masterplan.carlamorais.com`,
+    },
   ],
   contactado: [
     {
