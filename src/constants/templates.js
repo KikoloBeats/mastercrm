@@ -5,35 +5,47 @@ export const TEMPLATES = {
   novo: [
     {
       id: 'novo_v1',
-      label: 'Lançamento — Com link',
+      label: 'Lista de espera — Com link',
       text: (name) =>
-        `Olá ${fn(name)} \u{1F60A}\nSou a Júlia, da equipa da Carla Morais.\n\nAs inscrições para o MasterPlan de Carreira abriram hoje. Tens aqui o link para fazeres parte desta turma \u{1F90D}\n\nhttps://masterplan.carlamorais.com`,
+        `Olá ${fn(name)} \u{1F60A}\nSou a Júlia, da equipa da Carla Morais.\n\nFicaste na nossa lista de espera e queríamos mesmo que fizesses parte desta turma \u{1F90D}\n\nAs inscrições estão abertas até 12 de Maio — tens aqui o link:\nhttps://masterplan.carlamorais.com`,
     },
     {
       id: 'novo_v2',
-      label: 'Lançamento — Warm',
+      label: 'Lista de espera — Warm',
       text: (name) =>
-        `Olá ${fn(name)} \u{1F60A}\nSou a Júlia, da equipa da Carla Morais.\n\nAs inscrições para o MasterPlan de Carreira abriram hoje. Ficaste na nossa lista de interessadas e não queria que ficasses de fora.\n\nQueres que te envie o link?`,
+        `Olá ${fn(name)} \u{1F60A}\nSou a Júlia, da equipa da Carla Morais.\n\nFicaste na nossa lista de espera e estamos a dar prioridade a quem já mostrou interesse.\n\nQueres que te envie os detalhes?`,
     },
     {
       id: 'novo_v3',
-      label: 'Lançamento — Cold',
+      label: 'Lista de espera — Cold (lista antiga)',
       text: (name) =>
-        `Olá ${fn(name)} \u{1F60A}\nSou a Júlia, da equipa da Carla Morais.\n\nAs inscrições para o MasterPlan de Carreira abriram hoje. Ficaste na nossa lista e queria avisar-te.\n\nAinda tens interesse?`,
+        `Olá ${fn(name)} \u{1F60A}\nSou a Júlia, da equipa da Carla Morais.\n\nHá algum tempo que ficaste na nossa lista para o MasterPlan de Carreira — e a turma está agora a formar-se.\n\nAinda tens interesse em fazer parte?`,
     },
     {
       id: 'novo_v4',
-      label: 'Lançamento — Inscrito hoje',
+      label: 'Lista de espera — Inscrito recentemente',
       text: (name) =>
-        `Olá ${fn(name)} \u{1F60A}\nSou a Júlia, da equipa da Carla Morais.\n\nInscreveste-te hoje para saber mais sobre o MasterPlan de Carreira e as inscrições estão abertas.\n\nQueres que te envie o link directo?`,
+        `Olá ${fn(name)} \u{1F60A}\nSou a Júlia, da equipa da Carla Morais.\n\nInscreveste-te há pouco tempo para saber mais sobre o MasterPlan de Carreira — bom timing, as inscrições acabaram de abrir.\n\nQueres que te envie o link?`,
+    },
+    {
+      id: 'novo_v5',
+      label: 'Urgência — Fecha 12 de Maio',
+      text: (name) =>
+        `Olá ${fn(name)} \u{1F60A}\nSou a Júlia, da equipa da Carla Morais.\n\nAs inscrições para o MasterPlan de Carreira fecham a 12 de Maio. Ficaste na nossa lista e não queríamos que ficasses de fora.\n\nAinda tens interesse?`,
     },
   ],
   contactado: [
     {
       id: 'contactado_followup',
-      label: 'Follow-up — Hoje é o último dia',
+      label: 'Follow-up — Ainda abertas',
       text: (name) =>
-        `Olá ${fn(name)} \u{1F60A}\n\nAs inscrições para o MasterPlan de Carreira fecham hoje.\n\nAinda estás interessada?`,
+        `Olá ${fn(name)} \u{1F60A}\n\nSó a passar por aqui — as inscrições para o MasterPlan ainda estão abertas até 12 de Maio.\n\nAinda estás a pensar?`,
+    },
+    {
+      id: 'contactado_urgencia',
+      label: 'Follow-up — Último dia',
+      text: (name) =>
+        `Olá ${fn(name)} \u{1F60A}\n\nHoje é o último dia para entrares no MasterPlan de Carreira.\n\nQueres garantir o teu lugar?`,
     },
   ],
   respondeu: [
@@ -53,13 +65,13 @@ export const TEMPLATES = {
       id: 'interessado_convert_a',
       label: 'Conversão — Com link',
       text: (name) =>
-        `Olá ${fn(name)} \u{1F60A}\nSou a Júlia, da equipa da Carla Morais.\n\nAs inscrições para o MasterPlan de Carreira abriram hoje. Tens aqui o link para fazeres parte desta turma \u{1F90D}\n\nhttps://masterplan.carlamorais.com`,
+        `${fn(name)}, queríamos mesmo ter-te nesta turma \u{1F90D}\n\nAs inscrições fecham a 12 de Maio — tens aqui o link:\nhttps://masterplan.carlamorais.com`,
     },
     {
       id: 'interessado_convert_b',
       label: 'Conversão — Fechar',
       text: (name) =>
-        `${fn(name)}, é hoje o dia. Já falámos sobre o que queres mudar na tua carreira — o MasterPlan é o próximo passo.\n\nQueres garantir o teu lugar?`,
+        `${fn(name)}, esta turma é para pessoas que estão prontas para mudar de verdade.\n\nJá falámos sobre o que queres — o MasterPlan é o próximo passo concreto.\n\nQueres garantir o teu lugar antes do dia 12?`,
     },
   ],
   comprou: [
