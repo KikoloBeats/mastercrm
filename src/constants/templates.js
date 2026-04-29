@@ -7,7 +7,7 @@ export const TEMPLATES = {
       id: 'novo_v1',
       label: 'Lista de espera - Com link',
       text: (name) =>
-        `Olá ${fn(name)} \u{1F60A}\nSou a Júlia, da equipa da Carla Morais.\n\nFicaste na nossa lista de espera e queríamos mesmo que fizesses parte desta turma \u{1F90D}\n\nTens aqui o link:\nhttps://masterplan.carlamorais.com`,
+        `Olá ${fn(name)} \u{1F60A}\nSou a Júlia, da equipa da Carla Morais.\n\nFicaste na nossa lista de espera. A turma está agora a formar-se e ainda há lugar \u{1F90D}\n\nTens aqui o link:\nhttps://masterplan.carlamorais.com`,
     },
     {
       id: 'novo_v2',
@@ -65,7 +65,7 @@ export const TEMPLATES = {
       id: 'interessado_convert_a',
       label: 'Conversão - Com link',
       text: (name) =>
-        `${fn(name)}, queríamos mesmo ter-te nesta turma \u{1F90D}\n\nAs inscrições estão a fechar em breve. Tens aqui o link:\nhttps://masterplan.carlamorais.com`,
+        `${fn(name)}, a turma está a fechar e ainda há lugar para ti \u{1F90D}\n\nTens aqui o link:\nhttps://masterplan.carlamorais.com`,
     },
     {
       id: 'interessado_convert_b',
