@@ -41,12 +41,18 @@ export const TEMPLATES = {
       text: (name) =>
         `Olá ${fn(name)} \u{1F60A}\nSou a Júlia, da equipa da Carla Morais.\n\nInscreveste-te na nossa lista porque queres mudar algo na carreira. Passado algum tempo, ainda é esse o teu caso?`,
     },
-    // --- URGÊNCIA (usar perto do fecho) ---
+    // --- URGÊNCIA ---
     {
       id: 'novo_v5',
-      label: 'Urgencia - A fechar em breve',
+      label: 'Urgencia - A encerrar',
       text: (name) =>
-        `Olá ${fn(name)} \u{1F60A}\nSou a Júlia, da equipa da Carla Morais.\n\nAs inscrições para o MasterPlan de Carreira estão a fechar em breve. Ficaste na nossa lista e não queríamos que ficasses de fora.\n\nAinda tens interesse?`,
+        `Olá ${fn(name)} \u{1F60A}\nSou a Júlia, da equipa da Carla Morais.\n\nAs inscrições para o MasterPlan de Carreira estão a encerrar. Ficaste na nossa lista e não queria deixar passar sem te avisar.\n\nTens aqui o link:\nhttps://carlamorais.com`,
+    },
+    {
+      id: 'novo_urgencia_b',
+      label: 'Urgencia - Ultimas vagas',
+      text: (name) =>
+        `Olá ${fn(name)} \u{1F60A}\nSou a Júlia, da equipa da Carla Morais.\n\nEstamos a encerrar as inscrições para o MasterPlan de Carreira. Ficaste na nossa lista e ainda há espaço.\n\nSe quiseres entrar nesta turma:\nhttps://carlamorais.com`,
     },
   ],
   contactado: [
@@ -58,9 +64,15 @@ export const TEMPLATES = {
     },
     {
       id: 'contactado_urgencia',
-      label: 'Follow-up - Último dia',
+      label: 'Urgencia - A encerrar',
       text: (name) =>
-        `Olá ${fn(name)} \u{1F60A}\n\nHoje é o último dia para entrares no MasterPlan de Carreira.\n\nQueres garantir o teu lugar?`,
+        `Olá ${fn(name)} \u{1F60A}\n\nAs inscrições para o MasterPlan estão a encerrar. Depois disto não há mais vagas nesta turma.\n\nAinda estás a pensar entrar?`,
+    },
+    {
+      id: 'contactado_urgencia_link',
+      label: 'Urgencia - Com link',
+      text: (name) =>
+        `Olá ${fn(name)} \u{1F60A}\n\nAs inscrições para o MasterPlan estão a encerrar. Tens aqui o link se quiseres garantir o teu lugar:\nhttps://carlamorais.com`,
     },
   ],
   respondeu: [
@@ -87,6 +99,18 @@ export const TEMPLATES = {
       label: 'Conversão - Fechar',
       text: (name) =>
         `${fn(name)}, esta turma é para pessoas que estão prontas para mudar de verdade.\n\nJá falámos sobre o que queres. O MasterPlan é o próximo passo concreto.\n\nQueres garantir o teu lugar?`,
+    },
+    {
+      id: 'interessado_urgencia',
+      label: 'Urgencia - Fechar agora',
+      text: (name) =>
+        `${fn(name)}, as inscrições estão a encerrar.\n\nSe quiseres entrar nesta turma, este é o momento:\nhttps://carlamorais.com`,
+    },
+    {
+      id: 'interessado_urgencia_b',
+      label: 'Urgencia - Ultima oportunidade',
+      text: (name) =>
+        `${fn(name)}, estamos a encerrar as inscrições para o MasterPlan.\n\nJá falámos sobre o que queres mudar. Fica só a falta de dar o passo.\n\nO link está aqui:\nhttps://carlamorais.com`,
     },
   ],
   comprou: [
